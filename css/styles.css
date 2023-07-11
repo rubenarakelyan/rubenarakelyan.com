@@ -1,0 +1,105 @@
+/*
+  Minified by https://www.toptal.com/developers/cssminifier
+  SRI hash calculated by https://beautifycode.net/sri-hash-generator
+*/
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('fonts/bw-gradual-bold/BwGradual-Bold.woff2') format('woff2'),
+    url('fonts/bw-gradual-bold/BwGradual-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('fonts/bw-gradual-bold-italic/BwGradual-BoldItalic.woff2') format('woff2'),
+    url('fonts/bw-gradual-bold-italic/BwGradual-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('fonts/bw-gradual-regular/BwGradual-Regular.woff2') format('woff2'),
+    url('fonts/bw-gradual-regular/BwGradual-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('fonts/bw-gradual-regular-italic/BwGradual-RegularItalic.woff2') format('woff2'),
+    url('fonts/bw-gradual-regular-italic/BwGradual-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  margin: 50px 0;
+  font-family: 'Bw Gradual', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background: -webkit-linear-gradient(-70deg, #c90064 0%, #8250df 100%);
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+hgroup p {
+  font-weight: bold;
+}
+
+a {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  background-color: #c90064;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 10px 10px 0 #ccc;
+}
+
+a:hover, a:focus {
+  background-color: #ef409e;
+}
+
+.timeline, .timeline hgroup {
+  position: relative;
+}
+
+.timeline::before {
+  background-color: #c90064;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5px;
+}
+
+.timeline hgroup::before {
+  background-color: #c90064;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 15px;
+}
+
+.timeline p, .timeline h3 {
+  padding-left: 20px;
+}
