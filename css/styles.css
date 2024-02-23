@@ -41,6 +41,7 @@
 }
 
 body {
+  margin-top: 25px;
   margin-bottom: 50px;
   background-color: #dcdcdc;
   color: #212121;
