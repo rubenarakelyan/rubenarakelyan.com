@@ -50,7 +50,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
-  background: -webkit-linear-gradient(-70deg, #c90064 0%, #8250df 100%);
+  background: linear-gradient(-70deg, #8250df, #c90064);
   background-clip: text;
   -webkit-text-fill-color: rgba(0,0,0,0);
 }
@@ -68,17 +68,7 @@ hgroup p {
 }
 
 .container a {
-  display: inline-block;
-  margin: 0 10px 10px 0;
-  padding: 10px;
-  background-color: #c90064;
-  color: #fff;
-  text-decoration: none;
-  box-shadow: 10px 10px 0 #ccc;
-}
-
-.container a:hover, .container a:focus {
-  background-color: #ef409e;
+  color: #c90064;
 }
 
 .timeline, .timeline hgroup {
