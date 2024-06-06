@@ -1,0 +1,107 @@
+/* Fonts */
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('/assets/fonts/bw-gradual-bold/BwGradual-Bold.woff2') format('woff2'),
+    url('/assets/fonts/bw-gradual-bold/BwGradual-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('/assets/fonts/bw-gradual-bold-italic/BwGradual-BoldItalic.woff2') format('woff2'),
+    url('/assets/fonts/bw-gradual-bold-italic/BwGradual-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('/assets/fonts/bw-gradual-regular/BwGradual-Regular.woff2') format('woff2'),
+    url('/assets/fonts/bw-gradual-regular/BwGradual-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bw Gradual';
+  src: url('/assets/fonts/bw-gradual-regular-italic/BwGradual-RegularItalic.woff2') format('woff2'),
+    url('/assets/fonts/bw-gradual-regular-italic/BwGradual-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bw Gradual', sans-serif;
+  @apply text-pink-600;
+}
+
+a {
+  @apply text-blue-600 underline underline-offset-2;
+}
+
+a:hover, a:active, a:focus {
+  @apply decoration-2 transition duration-300 ease-in-out;
+}
+
+hgroup p {
+  font-weight: bold;
+}
+
+.timeline, .timeline hgroup {
+  position: relative;
+}
+
+.timeline::before {
+  background-color: #c90064;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5px;
+}
+
+.timeline hgroup::before {
+  background-color: #c90064;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 15px;
+}
+
+.timeline p, .timeline h3 {
+  padding-left: 20px;
+}
+
+@media print {
+  body {
+    zoom: 0.6;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .timeline::before, .timeline hgroup::before {
+    width: 0;
+  }
+
+  .timeline p, .timeline h3 {
+    padding-left: 0;
+  }
+}

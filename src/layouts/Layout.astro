@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title} &middot; Ruben Arakelyan</title>
+    <meta name="generator" content={Astro.generator}>
+    <meta name="description" content={description}>
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Ruben Arakelyan">
+    <meta name="application-name" content="Ruben Arakelyan">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="me" type="text/html" href="https://www.wackomenace.co.uk">
+    <link rel="me" type="text/html" href="https://tfnd.uk">
+    <link rel="me" type="text/html" href="https://github.com/rubenarakelyan">
+    <link rel="me" type="text/html" href="https://www.linkedin.com/in/rubenarakelyan/">
+    <link rel="me" type="text/html" href="https://bsky.app/profile/arakelyan.xyz">
+    <link rel="me" type="text/html" href="https://ruby.social/@ruben">
+    <script src="https://kit.fontawesome.com/49181d503a.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="antialiased scroll-smooth bg-slate-200 text-slate-800 selection:bg-pink-600 selection:text-white">
+    <main class="md:max-w-[80ch] md:mx-auto print:max-w-full px-4 py-10">
+      <slot />
+    </main>
+  </body>
+</html>
