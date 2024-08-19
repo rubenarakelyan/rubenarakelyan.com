@@ -1,8 +1,0 @@
-name: rubenarakelyan
-
-services:
-  web:
-    image: ghcr.io/rubenarakelyan/rubenarakelyan.com:main
-    ports:
-      - "127.0.0.1:4001:4001"
-    restart: always
